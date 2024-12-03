@@ -17,9 +17,9 @@ public class TypeCast {
         // Primitive vs Objects types:
         long start = System.currentTimeMillis();
         Integer sum = 0;
-        //for (int k=0;k<Integer.MAX_VALUE;k++) {
-        //sum += i;
-        //}
+        for (int k=0;k<Integer.MAX_VALUE;k++) {
+            sum += i;
+        }
         System.out.println("Sum: " + sum);
         long end = System.currentTimeMillis();
         double total = (double) (end - start) / 1000;
